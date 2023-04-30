@@ -1,0 +1,50 @@
+GET запрос
+GET http://localhost:4567/users
+
+
+REST-запрос на создание данных
+ѕрописываем в отправке каждый раз отдельно
+
+{
+	"id": 1,
+	"name": "Alice",
+	"phone": "888 888-888",
+	"email": "Alice@mail.com"
+}
+
+
+{
+	"id": 2,
+	"name": "Bob",
+	"phone": "777 777-777",
+	"email": "Bob@mail.com"
+}
+
+
+{
+	"id": 3,
+	"name": "Lucy",
+	"phone": "999 999-999",
+	"email": "Lucy@mail.com"
+}
+
+
+REST-запрос на получение данных по id
+GET http://localhost:4567/users/1
+
+
+REST-запрос на обновление данных по id.
+Ќастройки в Postman: Body, raw, JSON.
+
+PUT http://localhost:4567/users/1
+
+{
+	"id": 1,
+	"name": "Tom",
+	"phone": "333 333-333",
+	"email": "Tom@mail.com"
+}
+
+
+REST-запрос на удаление данных по id
+DELETE http://localhost:4567/users/1
